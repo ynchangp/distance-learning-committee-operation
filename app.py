@@ -4,7 +4,7 @@ import pandas as pd
 # 내부 DB 로드
 db = pd.read_excel("final_professor_list_250813.xlsx")
 
-st.title("📧 KDI Faculty Email Finder")
+st.title("📧 Faculty Email Finder")
 
 tab1, tab2 = st.tabs(["엑셀 자동 매칭", "단일 검색"])
 
@@ -27,3 +27,4 @@ with tab2:
             st.success(f"이메일: {result['Email'].values[0]}")
         else:
             st.error("해당 교원을 찾을 수 없습니다.")
+
