@@ -26,3 +26,4 @@ with st.form("faculty_form"):
         }])
         update_faculty_db(new_row)
         st.success("교원 정보가 저장되었습니다.")
+
