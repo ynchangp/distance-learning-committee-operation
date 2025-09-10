@@ -1,24 +1,24 @@
-import streamlit as st
+# Distance Learning Committee Operation
 
-st.set_page_config(page_title="Distance Learning Committee", layout="wide")
+통합 플랫폼으로 Faculty Email Finder와 Course Modality DB를 관리합니다.
 
-st.title("Distance Learning Committee Operation")
-st.markdown("📧 Faculty Email Finder와 📚 Course Modality DB를 관리하는 통합 플랫폼입니다.")
+👉 [앱 바로가기](https://distance-learning-committee-operation-ijsq9daifkqsrfyqf23m5d.streamlit.app)
 
-# 사이드바 메뉴
-menu = st.sidebar.selectbox(
-    "기능을 선택하세요",
-    ["홈", "Faculty Email Finder", "Course Modality DB"]
-)
+## 기능
 
-# 기능별 화면 분기
-if menu == "홈":
-    st.markdown("왼쪽 사이드바에서 기능을 선택해주세요.")
+### 📧 Faculty Email Finder
+- 이름 기반 이메일 자동 매칭
+- 교원 정보 엑셀 업로드 및 개별 입력
 
-elif menu == "Faculty Email Finder":
-    st.markdown("### 📧 Faculty Email Finder")
-    st.markdown("이름 기반 이메일 자동 매칭 기능을 여기에 구현하세요.")
+### 📚 Course Modality DB
+- 강의 정보 엑셀 업로드 및 개별 입력/수정
+- 검색 및 필터링
+- Reason for Applying 영어 번역
+- 전체/학기별 엑셀 다운로드
 
-elif menu == "Course Modality DB":
-    st.markdown("### 📚 Course Modality DB")
-    st.markdown("강의 정보 업로드 및 필터링 기능을 여기에 구현하세요.")
+## 실행 방법
+
+### 🔹 로컬에서 실행하려면
+```bash
+streamlit run app.py
+
