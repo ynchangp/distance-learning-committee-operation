@@ -2,8 +2,6 @@
 
 통합 플랫폼으로 Faculty Email Finder와 Course Modality DB를 관리합니다.
 
-👉 [앱 바로가기](https://distance-learning-committee-operation-ijsq9daifkqsrfyqf23m5d.streamlit.app)
-
 ## 기능
 
 ### 📧 Faculty Email Finder
@@ -18,7 +16,6 @@
 
 ## 실행 방법
 
-### 🔹 로컬에서 실행하려면
 ```bash
 streamlit run app.py
 
